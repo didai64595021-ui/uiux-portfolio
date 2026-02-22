@@ -5,7 +5,12 @@
       "Bash(cd C:\\\\Users\\\\user\\\\Desktop\\\\비즈니스\\\\UIUX 포트폴리오:*)",
       "WebFetch(domain:www.daeryunlaw.com)",
       "Bash(git status:*)",
-      "Bash(cd:*)"
+      "Bash(cd:*)",
+      "Bash(gh auth:*)",
+      "Bash(which git && git config user.name 2>/dev/null && git config user.email 2>/dev/null)",
+      "WebFetch(domain:portfolio-list-pi.vercel.app)",
+      "Bash(echo Vercel CLI 미설치:*)",
+      "Bash(tail:*)"
     ]
   }
 }
