@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+    font-feature-settings: "ss01", "ss02";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    @apply bg-primary/20 text-foreground;
+  }
+}
+
+@layer components {
+  .korean-text {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    line-height: 1.8;
+  }
+
+  .section-padding {
+    @apply py-16 sm:py-20 md:py-28 lg:py-32;
+  }
+
+  .section-title {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight;
+  }
+
+  .section-subtitle {
+    @apply text-sm sm:text-base md:text-lg text-secondary mt-3 sm:mt-4;
+  }
+
+  .container-base {
+    @apply max-w-7xl mx-auto px-5 sm:px-6 lg:px-8;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full
+           font-medium transition-all duration-300
+           hover:bg-primary-dark hover:shadow-lg hover:shadow-primary/25
+           active:scale-[0.98] min-h-[44px];
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary text-primary px-6 sm:px-8 py-3 sm:py-4 rounded-full
+           font-medium transition-all duration-300
+           hover:bg-primary hover:text-white
+           active:scale-[0.98] min-h-[44px];
+  }
+
+  .card {
+    @apply bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8
+           shadow-sm hover:shadow-md transition-all duration-300
+           border border-accent/30;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+input, select, textarea {
+  font-size: 16px;
+}
+
+a, button {
+  touch-action: manipulation;
+}

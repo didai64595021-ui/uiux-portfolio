@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-cream text-text font-sans overflow-x-hidden;
+    word-break: keep-all;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  input, select, textarea {
+    font-size: 16px;
+  }
+  a, button {
+    touch-action: manipulation;
+  }
+  ::selection {
+    @apply bg-gold/30 text-brown;
+  }
+}
+
+@layer components {
+  .korean-text { word-break: keep-all; overflow-wrap: break-word; line-height: 1.8; }
+  .section-padding { @apply py-16 sm:py-20 md:py-28 lg:py-32; }
+  .container-custom { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
+  .heading-responsive { @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold; }
+  .btn-primary {
+    @apply bg-brown hover:bg-brown-dark text-white font-semibold px-6 py-3 rounded-full
+    transition-all duration-300 hover:shadow-lg active:scale-95 min-h-[44px] inline-flex items-center justify-center;
+  }
+  .btn-outline {
+    @apply border-2 border-brown text-brown hover:bg-brown hover:text-white font-semibold px-6 py-3 rounded-full
+    transition-all duration-300 active:scale-95 min-h-[44px] inline-flex items-center justify-center;
+  }
+  .card {
+    @apply bg-white rounded-3xl shadow-sm hover:shadow-xl transition-all duration-500 overflow-hidden;
+  }
+  .glass {
+    @apply bg-white/60 backdrop-blur-xl border border-white/40;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .safe-area-bottom { padding-bottom: env(safe-area-inset-bottom); }
+}

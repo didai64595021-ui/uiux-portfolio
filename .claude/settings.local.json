@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep:*)",
+      "Bash(cd C:\\\\Users\\\\user\\\\Desktop\\\\비즈니스\\\\UIUX 포트폴리오:*)",
+      "WebFetch(domain:www.daeryunlaw.com)",
+      "Bash(git status:*)",
+      "Bash(cd:*)"
+    ]
+  }
+}

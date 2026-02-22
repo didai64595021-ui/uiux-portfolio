@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+@layer base {
+  html { scroll-behavior: smooth; -webkit-tap-highlight-color: transparent; -webkit-text-size-adjust: 100%; }
+  body { @apply bg-warm text-text font-sans overflow-x-hidden; word-break: keep-all; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  input, select, textarea { font-size: 16px; }
+  a, button { touch-action: manipulation; }
+  ::selection { @apply bg-caramel/20 text-charcoal; }
+}
+
+@layer components {
+  .korean-text { word-break: keep-all; overflow-wrap: break-word; line-height: 1.8; }
+  .section-padding { @apply py-16 sm:py-20 md:py-28 lg:py-32; }
+  .container-custom { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
+  .heading-responsive { @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold; }
+  .btn-primary {
+    @apply bg-charcoal hover:bg-charcoal-dark text-white font-semibold px-6 py-3 rounded-lg
+    transition-all duration-300 hover:shadow-lg active:scale-95 min-h-[44px] inline-flex items-center justify-center;
+  }
+  .btn-outline {
+    @apply border-2 border-charcoal text-charcoal hover:bg-charcoal hover:text-white font-semibold px-6 py-3 rounded-lg
+    transition-all duration-300 active:scale-95 min-h-[44px] inline-flex items-center justify-center;
+  }
+  .btn-accent {
+    @apply bg-caramel hover:bg-caramel-dark text-white font-semibold px-6 py-3 rounded-lg
+    transition-all duration-300 hover:shadow-lg active:scale-95 min-h-[44px] inline-flex items-center justify-center;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+  .safe-area-bottom { padding-bottom: env(safe-area-inset-bottom); }
+}
+
+input[type="range"] { @apply appearance-none w-full h-2 rounded-full bg-gray-200 outline-none; }
+input[type="range"]::-webkit-slider-thumb { @apply appearance-none w-5 h-5 rounded-full bg-caramel cursor-pointer shadow-md; -webkit-appearance: none; }
+input[type="range"]::-moz-range-thumb { @apply w-5 h-5 rounded-full bg-caramel cursor-pointer shadow-md border-0; }

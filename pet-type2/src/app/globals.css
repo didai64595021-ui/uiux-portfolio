@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --sage: #1A2F23;
+  --mint: #00D68F;
+  --light: #F0FAF4;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Pretendard Variable', 'Plus Jakarta Sans', sans-serif;
+  overflow-x: hidden;
+  background: #ffffff;
+  color: #1A2F23;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* iOS input zoom prevention */
+input, select, textarea {
+  font-size: 16px;
+}
+
+/* Touch optimization */
+a, button {
+  touch-action: manipulation;
+}
+
+.korean-text {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  line-height: 1.7;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Glass morphism */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glass-dark {
+  background: rgba(26, 47, 35, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 214, 143, 0.15);
+}
+
+/* Mint glow */
+.mint-glow {
+  box-shadow: 0 0 40px rgba(0, 214, 143, 0.2), 0 0 80px rgba(0, 214, 143, 0.1);
+}
+
+.mint-glow-sm {
+  box-shadow: 0 0 20px rgba(0, 214, 143, 0.15);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #00D68F, #00B577);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card hover */
+.card-hover {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(0, 214, 143, 0.15);
+}
+
+/* Radar chart */
+.radar-chart {
+  position: relative;
+}
+
+/* Status pulse */
+@keyframes statusPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.status-pulse {
+  animation: statusPulse 2s ease-in-out infinite;
+}
+
+/* Quiz option */
+.quiz-option {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+.quiz-option:hover {
+  border-color: #00D68F;
+  background: rgba(0, 214, 143, 0.05);
+}
+.quiz-option.selected {
+  border-color: #00D68F;
+  background: rgba(0, 214, 143, 0.1);
+}
+
+/* Progress bar */
+.progress-track {
+  background: #E5E7EB;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.progress-fill {
+  background: linear-gradient(90deg, #00D68F, #00B577);
+  border-radius: 999px;
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Noise texture */
+.noise-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Chat bubble */
+.chat-bubble {
+  position: relative;
+  border-radius: 20px 20px 20px 4px;
+}
+.chat-bubble-right {
+  border-radius: 20px 20px 4px 20px;
+}
+
+/* Floating label */
+.float-label input:focus ~ label,
+.float-label input:not(:placeholder-shown) ~ label {
+  transform: translateY(-1.5rem) scale(0.85);
+  color: #00D68F;
+}
+
+/* Safe area */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}

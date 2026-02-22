@@ -1,0 +1,156 @@
+========================================
+  UIUX 포트폴리오 - 제작 홈페이지 목록
+  업종별 2타입 사이드바이사이드
+========================================
+
+★ [업종]        마케팅 에이전시 (자사 사이트)
+[Type A]        온다마케팅 — 라이트 그린
+[배포 링크]     https://onda-marketing.vercel.app
+[Type B]        온다마케팅 — 다크 사이버펑크
+[배포 링크]     https://onda-marketing-dark.vercel.app
+[기술 스택]     Next.js 14, React 18, Tailwind CSS, TypeScript, Framer Motion
+[상태]          완료 ✅
+
+----------------------------------------
+
+[업종]          반려동물 (강아지 분양)
+[Type A]        시그니처펍스 — 럭셔리 부티크
+[배포 링크]     https://pet-shop-eosin-ten.vercel.app
+[Type B]        시그니처펍스 — 모던 인터랙티브
+[배포 링크]     https://pet-type2.vercel.app
+[기술 스택]     Next.js 14, React 18, Tailwind CSS, TypeScript, Framer Motion
+[상태]          완료 ✅
+
+----------------------------------------
+
+[업종]          반려동물 (강아지 분양) — 2nd Brand
+[Type A]        벨리독 VELYDOG — High-End Editorial (수정)
+[배포 링크]     https://pet-velydog.vercel.app
+[Type B]        벨리독 × 온다 — Puppy Paradise (파스텔 큐트)
+[배포 링크]     https://pet-velydog-type2.vercel.app
+[기술 스택]     Next.js 16, React 19, Tailwind CSS v4, TypeScript
+[상태]          완료 ✅
+
+----------------------------------------
+
+[업종]          병의원 (치과)
+[Type A]        ONDA 치과의원 — 클린 모던
+[배포 링크]     https://clinic-blog-v2.vercel.app
+[Type B]        ONDA 치과의원 — 프리미엄 웰니스
+[배포 링크]     https://clinic-type2.vercel.app
+[기술 스택]     Next.js 14, React 18, Tailwind CSS, TypeScript
+[상태]          완료 ✅
+
+----------------------------------------
+
+[업종]          광고대행사
+[Type A]        온다 크리에이티브 — 크리에이티브 에이전시
+[배포 링크]     https://ad-agency-v2.vercel.app
+[Type B]        온다 크리에이티브 — 브루탈리스트 테크
+[배포 링크]     https://ad-agency-type2.vercel.app
+[기술 스택]     Next.js 14, React 18, Tailwind CSS, TypeScript
+[상태]          완료 ✅
+
+----------------------------------------
+
+[업종]          법률사무소 (법무법인)
+[Type A]        법무법인 온다 — 클래식 법률
+[배포 링크]     https://law-firm-v3-three.vercel.app
+[Type B]        법무법인 온다 — 모던 신뢰
+[배포 링크]     https://law-firm-type2.vercel.app
+[기술 스택]     Next.js 14, React 18, Tailwind CSS, TypeScript
+[상태]          완료 ✅
+
+----------------------------------------
+
+[업종]          아파트 분양 (모델하우스)
+[Type A]        온다 레지던스 — 프리미엄 레지던스
+[배포 링크]     https://apartment-v2-six.vercel.app
+[Type B]        온다 레지던스 — 시네마틱 럭셔리
+[배포 링크]     https://apartment-type2.vercel.app
+[기술 스택]     Next.js 14, React 18, Tailwind CSS, TypeScript
+[상태]          완료 ✅
+
+----------------------------------------
+
+[업종]          자체몰 (농산물)
+[Type A]        온다팜 — 내추럴 팜
+[배포 링크]     https://farm-shop-v2.vercel.app
+[Type B]        온다팜 — 에디토리얼 마켓
+[배포 링크]     https://farm-type2.vercel.app
+[기술 스택]     Next.js 14, React 18, Tailwind CSS, TypeScript
+[상태]          완료 ✅
+
+----------------------------------------
+
+[업종]          병의원 (피부과)
+[Type A]        ONDA 피부과의원 — 로즈골드 클리닉
+[배포 링크]     https://dermatology-alpha.vercel.app
+[Type B]        ONDA 피부과의원 — 메디컬 스파
+[배포 링크]     https://derma-type2.vercel.app
+[기술 스택]     Next.js 14, React 18, Tailwind CSS, TypeScript
+[상태]          완료 ✅
+
+----------------------------------------
+
+[업종]          중고차 매매
+[Type A]        온다 모터스 — 딜러십 모던
+[배포 링크]     https://used-car-ten.vercel.app
+[Type B]        온다 모터스 — 핀테크 스타일
+[배포 링크]     https://car-type2.vercel.app
+[기술 스택]     Next.js 14, React 18, Tailwind CSS, TypeScript
+[상태]          완료 ✅
+
+----------------------------------------
+
+[업종]          펜션/숙박
+[Type A]        온다 스테이 — 다이나믹 스테이
+[배포 링크]     https://pension-five.vercel.app
+[Type B]        온다 스테이 — 트래블 매거진
+[배포 링크]     https://pension-type2.vercel.app
+[기술 스택]     Next.js 14, React 18, Tailwind CSS, TypeScript
+[상태]          완료 ✅
+
+----------------------------------------
+
+[업종]          인테리어/리모델링
+[Type A]        온다 리빙 — 공간 내비게이터
+[배포 링크]     https://interior-gamma-beige.vercel.app
+[Type B]        온다 리빙 — 에디토리얼 포트폴리오
+[배포 링크]     https://interior-type2.vercel.app
+[기술 스택]     Next.js 14, React 18, Tailwind CSS, TypeScript
+[상태]          완료 ✅
+
+----------------------------------------
+
+★ [업종]        극단/연극 (외부 프로젝트)
+[사이트명]      프로젝트그룹 낙타 — 사막 오아시스 테마
+[배포 링크]     https://pg-nakta.vercel.app
+[기술 스택]     Next.js 16, React 19, Tailwind CSS v4, TypeScript
+[특징]          스태프 중심 크레딧, 수평 타임라인, 사막/오아시스 디자인
+[상태]          완료 ✅
+
+----------------------------------------
+
+[업종]          피트니스/헬스장
+[Type A]        온다 피트니스 — 다크 네온 에너지
+[배포 링크]     https://fitness-psi-seven.vercel.app
+[Type B]        온다 웰니스 — 프리미엄 웰니스 클럽
+[배포 링크]     https://fitness-type2.vercel.app
+[기술 스택]     Next.js 16, React 19, Tailwind CSS v4, TypeScript
+[상태]          완료 ✅
+
+----------------------------------------
+
+[업종]          카페
+[Type A]        온다 카페 — 웜 아티즌
+[배포 링크]     https://cafe-five-lime.vercel.app
+[Type B]        온다 카페 — 노르딕 미니멀
+[배포 링크]     https://cafe-type2.vercel.app
+[기술 스택]     Next.js 16, React 19, Tailwind CSS v4, TypeScript
+[상태]          완료 ✅
+
+========================================
+  포트폴리오 리스트: https://portfolio-list-pi.vercel.app
+  최종 업데이트: 2026-02-22
+========================================
