@@ -37,7 +37,7 @@ export default function ComparisonMatrix({
               <div className="mb-5">
                 <span className="text-2xl mb-2 block">{treatment.icon}</span>
                 <h3 className="font-serif text-xl text-primary">
-                  {treatment.name}
+                  {t(treatment.name, treatment.nameZh)}
                 </h3>
                 <p className="text-xs text-gray-cool mt-1">
                   {treatment.nameEn}
@@ -51,7 +51,7 @@ export default function ComparisonMatrix({
                   <div className="flex justify-between text-xs mb-1">
                     <span className="text-gray-cool">{t('시술 시간', '療程時間')}</span>
                     <span className="text-text font-medium">
-                      {treatment.duration}
+                      {t(treatment.duration, treatment.durationZh)}
                     </span>
                   </div>
                 </div>
@@ -61,7 +61,7 @@ export default function ComparisonMatrix({
                   <div className="flex justify-between text-xs mb-1">
                     <span className="text-gray-cool">{t('권장 횟수', '建議次數')}</span>
                     <span className="text-text font-medium">
-                      {treatment.sessions}
+                      {t(treatment.sessions, treatment.sessionsZh)}
                     </span>
                   </div>
                 </div>
@@ -71,7 +71,7 @@ export default function ComparisonMatrix({
                   <div className="flex justify-between text-xs mb-1">
                     <span className="text-gray-cool">{t('다운타임', '恢復期')}</span>
                     <span className="text-text font-medium">
-                      {treatment.downtime}
+                      {t(treatment.downtime, treatment.downtimeZh)}
                     </span>
                   </div>
                 </div>
@@ -103,7 +103,7 @@ export default function ComparisonMatrix({
                   <div className="flex justify-between text-xs">
                     <span className="text-gray-cool">{t('가격대', '價格帶')}</span>
                     <span className="text-accent-dark font-semibold">
-                      {treatment.priceRange}
+                      {t(treatment.priceRange, treatment.priceRangeZh)}
                     </span>
                   </div>
                 </div>

@@ -44,7 +44,7 @@ export default function JourneyTimeline({
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-primary">
-                    {step.label}
+                    {t(step.label, step.labelZh)}
                   </p>
                   <p className="text-xs text-gray-cool">{treatmentName}</p>
                 </div>
@@ -64,7 +64,7 @@ export default function JourneyTimeline({
 
               {/* Description */}
               <p className="text-sm korean-text text-gray-cool">
-                {step.description}
+                {t(step.description, step.descriptionZh)}
               </p>
 
               {/* Progress Bar */}

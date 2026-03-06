@@ -67,13 +67,13 @@ export default function RoutinePage() {
                         : "text-text"
                     }`}
                   >
-                    {routine.title}
+                    {t(routine.title, routine.titleZh)}
                   </h3>
                   <p className="text-xs text-accent-dark mt-0.5">
-                    {routine.concern}
+                    {t(routine.concern, routine.concernZh)}
                   </p>
                   <p className="text-sm korean-text text-gray-cool mt-2">
-                    {routine.description}
+                    {t(routine.description, routine.descriptionZh)}
                   </p>
                 </button>
               ))}
@@ -89,8 +89,8 @@ export default function RoutinePage() {
             <ScrollAnimator>
               <SectionHeader
                 subtitle="Step 2"
-                title={selectedRoutine.title}
-                description={selectedRoutine.description}
+                title={t(selectedRoutine.title, selectedRoutine.titleZh)}
+                description={t(selectedRoutine.description, selectedRoutine.descriptionZh)}
               />
             </ScrollAnimator>
 
@@ -133,18 +133,18 @@ export default function RoutinePage() {
                           <div className="flex items-start justify-between gap-2">
                             <div>
                               <h4 className="text-sm font-medium text-primary">
-                                {product.name}
+                                {t(product.name, product.nameZh)}
                               </h4>
                               <span className="text-[10px] px-2 py-0.5 rounded-full bg-accent/10 text-accent-dark">
-                                {product.type}
+                                {t(product.type, product.typeZh)}
                               </span>
                             </div>
                           </div>
                           <p className="text-xs korean-text text-gray-cool mt-1.5">
-                            {product.description}
+                            {t(product.description, product.descriptionZh)}
                           </p>
                           <p className="text-[10px] text-accent-dark mt-1">
-                            Key: {product.keyIngredient}
+                            Key: {t(product.keyIngredient, product.keyIngredientZh)}
                           </p>
                         </div>
                       </div>
@@ -195,18 +195,18 @@ export default function RoutinePage() {
                           <div className="flex items-start justify-between gap-2">
                             <div>
                               <h4 className="text-sm font-medium text-primary">
-                                {product.name}
+                                {t(product.name, product.nameZh)}
                               </h4>
                               <span className="text-[10px] px-2 py-0.5 rounded-full bg-accent/10 text-accent-dark">
-                                {product.type}
+                                {t(product.type, product.typeZh)}
                               </span>
                             </div>
                           </div>
                           <p className="text-xs korean-text text-gray-cool mt-1.5">
-                            {product.description}
+                            {t(product.description, product.descriptionZh)}
                           </p>
                           <p className="text-[10px] text-accent-dark mt-1">
-                            Key: {product.keyIngredient}
+                            Key: {t(product.keyIngredient, product.keyIngredientZh)}
                           </p>
                         </div>
                       </div>

@@ -56,26 +56,26 @@ export default function TreatmentDetailPage() {
               <span className="text-white/20">/</span>
               <span className="text-white/40 text-xs">{t('시술안내', '療程介紹')}</span>
               <span className="text-white/20">/</span>
-              <span className="text-accent text-xs">{treatment.name}</span>
+              <span className="text-accent text-xs">{t(treatment.name, treatment.nameZh)}</span>
             </div>
 
             <span className="text-4xl mb-4 block">{treatment.icon}</span>
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white leading-tight">
-              {treatment.name}
+              {t(treatment.name, treatment.nameZh)}
             </h1>
             <p className="text-accent/80 text-sm mt-1">
               {treatment.nameEn}
             </p>
             <p className="mt-4 text-white/60 text-sm sm:text-base korean-text max-w-xl">
-              {treatment.description}
+              {t(treatment.description, treatment.descriptionZh)}
             </p>
 
             {/* Quick Stats */}
             <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4">
               {[
-                { label: t("시술 시간", "療程時間"), value: treatment.duration },
-                { label: t("권장 횟수", "建議次數"), value: treatment.sessions },
-                { label: t("다운타임", "恢復期"), value: treatment.downtime },
+                { label: t("시술 시간", "療程時間"), value: t(treatment.duration, treatment.durationZh) },
+                { label: t("권장 횟수", "建議次數"), value: t(treatment.sessions, treatment.sessionsZh) },
+                { label: t("다운타임", "恢復期"), value: t(treatment.downtime, treatment.downtimeZh) },
                 {
                   label: t("통증", "疼痛感"),
                   value: painLabels[treatment.painLevel],
@@ -142,15 +142,15 @@ export default function TreatmentDetailPage() {
                     </div>
                     <div>
                       <h3 className="font-medium text-primary text-sm">
-                        {step.title}
+                        {t(step.title, step.titleZh)}
                       </h3>
                       <p className="text-[10px] text-gray-cool">
-                        {step.duration}
+                        {t(step.duration, step.durationZh)}
                       </p>
                     </div>
                   </div>
                   <p className="text-sm korean-text text-gray-cool">
-                    {step.description}
+                    {t(step.description, step.descriptionZh)}
                   </p>
                 </div>
               ))}
@@ -178,7 +178,7 @@ export default function TreatmentDetailPage() {
               {treatment.beforeAfter.map((ba, index) => (
                 <BeforeAfterSlider
                   key={index}
-                  label={`${ba.label} (${ba.sessions}${t('회차', '次')})`}
+                  label={`${t(ba.label, ba.labelZh)} (${ba.sessions}${t('회차', '次')})`}
                 />
               ))}
             </div>
@@ -203,7 +203,7 @@ export default function TreatmentDetailPage() {
           <ScrollAnimator>
             <JourneyTimeline
               steps={treatment.journey}
-              treatmentName={treatment.name}
+              treatmentName={t(treatment.name, treatment.nameZh)}
             />
           </ScrollAnimator>
         </div>
@@ -253,7 +253,7 @@ export default function TreatmentDetailPage() {
                     className="w-full flex items-center justify-between p-4 sm:p-5 text-left min-h-[48px]"
                   >
                     <span className="text-sm sm:text-base font-medium text-primary pr-4 korean-text">
-                      {item.question}
+                      {t(item.question, item.questionZh)}
                     </span>
                     <svg
                       className={`w-5 h-5 text-gray-cool flex-shrink-0 transition-transform ${
@@ -274,7 +274,7 @@ export default function TreatmentDetailPage() {
                   {openFaq === index && (
                     <div className="px-4 sm:px-5 pb-4 sm:pb-5">
                       <p className="text-sm korean-text text-gray-cool leading-relaxed">
-                        {item.answer}
+                        {t(item.answer, item.answerZh)}
                       </p>
                     </div>
                   )}
@@ -308,7 +308,7 @@ export default function TreatmentDetailPage() {
                   >
                     <span className="text-2xl block mb-2">{tr.icon}</span>
                     <h3 className="text-sm font-medium text-primary group-hover:text-accent-dark transition-colors">
-                      {tr.name}
+                      {t(tr.name, tr.nameZh)}
                     </h3>
                     <p className="text-[10px] text-gray-cool mt-0.5">
                       {tr.nameEn}
@@ -324,7 +324,7 @@ export default function TreatmentDetailPage() {
       <section className="py-16 sm:py-20 bg-primary">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="font-serif text-2xl sm:text-3xl text-white mb-3">
-            {treatment.name} {t('상담 예약', '諮詢預約')}
+            {t(treatment.name, treatment.nameZh)} {t('상담 예약', '諮詢預約')}
           </h2>
           <p className="text-white/60 text-sm korean-text mb-6">
             {t(

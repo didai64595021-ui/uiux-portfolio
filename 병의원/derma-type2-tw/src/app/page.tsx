@@ -124,13 +124,13 @@ export default function Home() {
                 >
                   <span className="text-3xl block mb-3">{tr.icon}</span>
                   <h3 className="font-serif text-lg sm:text-xl text-primary group-hover:text-accent-dark transition-colors">
-                    {tr.name}
+                    {t(tr.name, tr.nameZh)}
                   </h3>
                   <p className="text-xs text-gray-cool mt-1 mb-3">
                     {tr.nameEn}
                   </p>
                   <p className="text-sm korean-text text-gray-cool line-clamp-2">
-                    {tr.shortDesc}
+                    {t(tr.shortDesc, tr.shortDescZh)}
                   </p>
 
                   {/* Quick Stats */}
@@ -138,13 +138,13 @@ export default function Home() {
                     <div>
                       <p className="text-[10px] text-gray-cool">{t('시술시간', '療程時間')}</p>
                       <p className="text-xs font-medium text-primary">
-                        {tr.duration}
+                        {t(tr.duration, tr.durationZh)}
                       </p>
                     </div>
                     <div>
                       <p className="text-[10px] text-gray-cool">{t('다운타임', '恢復期')}</p>
                       <p className="text-xs font-medium text-primary">
-                        {tr.downtime}
+                        {t(tr.downtime, tr.downtimeZh)}
                       </p>
                     </div>
                   </div>
@@ -182,7 +182,7 @@ export default function Home() {
                   <span className="text-xl">{tr.icon}</span>
                   <div>
                     <p className="text-sm font-medium text-primary">
-                      {tr.name}
+                      {t(tr.name, tr.nameZh)}
                     </p>
                     <p className="text-[10px] text-gray-cool">
                       {tr.nameEn}
@@ -278,26 +278,26 @@ export default function Home() {
                   <div className="p-5 sm:p-6">
                     <div className="flex items-center gap-2 mb-1">
                       <h3 className="font-serif text-xl text-primary">
-                        {doctor.name}
+                        {t(doctor.name, doctor.nameZh)}
                       </h3>
                       <span className="text-xs px-2 py-0.5 rounded-full bg-accent/10 text-accent-dark">
-                        {doctor.title}
+                        {t(doctor.title, doctor.titleZh)}
                       </span>
                     </div>
                     <p className="text-sm text-gray-cool mb-3">
-                      {doctor.specialty}
+                      {t(doctor.specialty, doctor.specialtyZh)}
                     </p>
                     <p className="text-sm korean-text text-gray-cool/80 line-clamp-2">
-                      &quot;{doctor.philosophy}&quot;
+                      &quot;{t(doctor.philosophy, doctor.philosophyZh)}&quot;
                     </p>
 
                     <div className="mt-4 flex flex-wrap gap-1.5">
-                      {doctor.specialties.map((s) => (
+                      {doctor.specialties.map((s, idx) => (
                         <span
                           key={s}
                           className="text-[10px] px-2 py-1 rounded-full bg-primary/5 text-primary/70"
                         >
-                          {s}
+                          {t(s, doctor.specialtiesZh[idx])}
                         </span>
                       ))}
                     </div>
@@ -326,7 +326,7 @@ export default function Home() {
           <ScrollAnimator>
             <JourneyTimeline
               steps={treatments[0].journey}
-              treatmentName={treatments[0].name}
+              treatmentName={t(treatments[0].name, treatments[0].nameZh)}
             />
           </ScrollAnimator>
         </div>

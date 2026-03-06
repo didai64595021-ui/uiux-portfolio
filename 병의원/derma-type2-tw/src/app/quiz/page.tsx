@@ -109,7 +109,7 @@ export default function QuizPage() {
               {t('분석 결과', '分析結果')}
             </h1>
             <p className="text-sm sm:text-base korean-text text-gray-cool max-w-lg mx-auto">
-              {result.summary}
+              {t(result.summary, result.summaryZh)}
             </p>
           </div>
 
@@ -134,20 +134,20 @@ export default function QuizPage() {
                       <span className="text-2xl">{tr.icon}</span>
                       <div className="flex-1">
                         <h3 className="font-serif text-lg text-primary">
-                          {tr.name}
+                          {t(tr.name, tr.nameZh)}
                         </h3>
                         <p className="text-xs text-gray-cool mt-0.5">
                           {tr.nameEn}
                         </p>
                         <p className="text-sm korean-text text-gray-cool mt-2">
-                          {tr.shortDesc}
+                          {t(tr.shortDesc, tr.shortDescZh)}
                         </p>
                         <div className="mt-3 flex gap-4 text-xs">
                           <span className="text-gray-cool">
-                            {tr.duration}
+                            {t(tr.duration, tr.durationZh)}
                           </span>
                           <span className="text-gray-cool">
-                            {tr.sessions}
+                            {t(tr.sessions, tr.sessionsZh)}
                           </span>
                         </div>
                       </div>
@@ -195,10 +195,10 @@ export default function QuizPage() {
                       <span className="text-xl">{tr.icon}</span>
                       <div className="flex-1">
                         <h3 className="text-sm font-medium text-primary">
-                          {tr.name}
+                          {t(tr.name, tr.nameZh)}
                         </h3>
                         <p className="text-xs text-gray-cool">
-                          {tr.shortDesc}
+                          {t(tr.shortDesc, tr.shortDescZh)}
                         </p>
                       </div>
                       <svg
@@ -296,10 +296,10 @@ export default function QuizPage() {
           }`}
         >
           <h1 className="font-serif text-xl sm:text-2xl md:text-3xl text-primary mb-2">
-            {step.question}
+            {t(step.question, step.questionZh)}
           </h1>
           {step.subtitle && (
-            <p className="text-sm text-gray-cool korean-text">{step.subtitle}</p>
+            <p className="text-sm text-gray-cool korean-text">{t(step.subtitle, step.subtitleZh || '')}</p>
           )}
 
           {/* Options */}
@@ -349,11 +349,11 @@ export default function QuizPage() {
                         {option.icon && (
                           <span className="mr-2">{option.icon}</span>
                         )}
-                        {option.label}
+                        {t(option.label, option.labelZh)}
                       </p>
                       {option.description && (
                         <p className="text-xs text-gray-cool mt-0.5">
-                          {option.description}
+                          {t(option.description, option.descriptionZh || '')}
                         </p>
                       )}
                     </div>

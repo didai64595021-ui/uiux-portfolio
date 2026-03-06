@@ -50,7 +50,7 @@ export default function CasesPage() {
                     : "bg-white text-gray-cool hover:bg-gray-warm/50 border border-gray-warm/50"
                 }`}
               >
-                {cat.name}
+                {t(cat.name, cat.nameZh)}
               </button>
             ))}
           </div>
@@ -67,10 +67,10 @@ export default function CasesPage() {
                   <span className="text-2xl">{tr.icon}</span>
                   <div>
                     <h2 className="font-serif text-xl sm:text-2xl text-primary">
-                      {tr.name}
+                      {t(tr.name, tr.nameZh)}
                     </h2>
                     <p className="text-xs text-gray-cool">
-                      {tr.nameEn} | {tr.category}
+                      {tr.nameEn} | {t(tr.category, tr.categoryZh)}
                     </p>
                   </div>
                   <Link
@@ -87,7 +87,7 @@ export default function CasesPage() {
                   {tr.beforeAfter.map((ba, index) => (
                     <BeforeAfterSlider
                       key={index}
-                      label={`${ba.label} (${ba.sessions}${t('회차', '次')})`}
+                      label={`${t(ba.label, ba.labelZh)} (${ba.sessions}${t('회차', '次')})`}
                     />
                   ))}
                 </div>

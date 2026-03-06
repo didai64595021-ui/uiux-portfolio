@@ -52,7 +52,7 @@ export default function DoctorsPage() {
                           </span>
                         </div>
                         <p className="text-sm text-gray-cool">
-                          {doctor.title}
+                          {t(doctor.title, doctor.titleZh)}
                         </p>
                       </div>
                       <div className="absolute bottom-0 left-0 right-0 h-1/4 bg-gradient-to-t from-bg to-transparent" />
@@ -65,25 +65,25 @@ export default function DoctorsPage() {
                   >
                     <div className="flex items-center gap-3 mb-2">
                       <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl text-primary">
-                        {doctor.name}
+                        {t(doctor.name, doctor.nameZh)}
                       </h2>
                       <span className="px-3 py-1 rounded-full bg-accent/10 text-accent-dark text-xs font-medium">
-                        {doctor.title}
+                        {t(doctor.title, doctor.titleZh)}
                       </span>
                     </div>
                     <p className="text-sm text-gray-cool mb-4">
-                      {doctor.specialty}
+                      {t(doctor.specialty, doctor.specialtyZh)}
                     </p>
 
                     {/* Philosophy */}
                     <blockquote className="border-l-2 border-accent pl-4 py-1 mb-6">
                       <p className="text-sm sm:text-base korean-text text-primary/80 italic">
-                        &quot;{doctor.philosophy}&quot;
+                        &quot;{t(doctor.philosophy, doctor.philosophyZh)}&quot;
                       </p>
                     </blockquote>
 
                     <p className="text-sm korean-text text-gray-cool mb-6">
-                      {doctor.bio}
+                      {t(doctor.bio, doctor.bioZh)}
                     </p>
 
                     {/* Education */}
@@ -92,7 +92,7 @@ export default function DoctorsPage() {
                         Education
                       </h3>
                       <ul className="space-y-2">
-                        {doctor.education.map((edu) => (
+                        {doctor.education.map((edu, i) => (
                           <li
                             key={edu}
                             className="flex items-start gap-2 text-sm text-gray-cool"
@@ -108,7 +108,7 @@ export default function DoctorsPage() {
                                 clipRule="evenodd"
                               />
                             </svg>
-                            {edu}
+                            {t(edu, doctor.educationZh[i])}
                           </li>
                         ))}
                       </ul>
@@ -120,7 +120,7 @@ export default function DoctorsPage() {
                         Certifications
                       </h3>
                       <ul className="space-y-2">
-                        {doctor.certifications.map((cert) => (
+                        {doctor.certifications.map((cert, i) => (
                           <li
                             key={cert}
                             className="flex items-start gap-2 text-sm text-gray-cool"
@@ -136,7 +136,7 @@ export default function DoctorsPage() {
                                 clipRule="evenodd"
                               />
                             </svg>
-                            {cert}
+                            {t(cert, doctor.certificationsZh[i])}
                           </li>
                         ))}
                       </ul>
@@ -144,12 +144,12 @@ export default function DoctorsPage() {
 
                     {/* Specialties */}
                     <div className="flex flex-wrap gap-2">
-                      {doctor.specialties.map((s) => (
+                      {doctor.specialties.map((s, i) => (
                         <span
                           key={s}
                           className="text-xs px-3 py-1.5 rounded-full bg-primary/5 text-primary/70 border border-primary/10"
                         >
-                          {s}
+                          {t(s, doctor.specialtiesZh[i])}
                         </span>
                       ))}
                     </div>
@@ -159,7 +159,7 @@ export default function DoctorsPage() {
                         href="/booking"
                         className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-primary text-white text-sm font-medium hover:bg-primary-dark transition-colors min-h-[44px]"
                       >
-                        {t(`${doctor.name} 원장 상담 예약`, `預約${doctor.name}院長諮詢`)}
+                        {t(`${doctor.name} 원장 상담 예약`, `預約${doctor.nameZh}院長諮詢`)}
                       </Link>
                     </div>
                   </div>

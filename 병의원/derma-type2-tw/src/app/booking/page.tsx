@@ -240,7 +240,7 @@ export default function BookingPage() {
                       <option value="">{t('선택하세요', '請選擇')}</option>
                       {treatments.map((tr) => (
                         <option key={tr.id} value={tr.id}>
-                          {tr.name} ({tr.nameEn})
+                          {t(tr.name, tr.nameZh)}
                         </option>
                       ))}
                     </select>
@@ -262,7 +262,7 @@ export default function BookingPage() {
                       <option value="">{t('무관', '不限')}</option>
                       {doctors.map((d) => (
                         <option key={d.id} value={d.id}>
-                          {d.name} {d.title}
+                          {t(d.name, d.nameZh)} {t(d.title, d.titleZh)}
                         </option>
                       ))}
                     </select>
