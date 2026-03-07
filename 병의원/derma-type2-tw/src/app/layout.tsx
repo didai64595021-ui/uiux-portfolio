@@ -26,7 +26,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover" />
       </head>
-      <body className="min-h-screen flex flex-col overflow-x-hidden">
+      <body className="min-h-[100svh] flex flex-col overflow-x-hidden">
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>

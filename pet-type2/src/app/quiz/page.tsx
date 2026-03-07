@@ -37,7 +37,7 @@ export default function QuizPage() {
   const progress = ((currentQ + (answers[quizQuestions[currentQ]?.id] ? 1 : 0)) / quizQuestions.length) * 100;
 
   return (
-    <main className="min-h-screen bg-sage-50">
+    <main className="min-h-[100svh] bg-sage-50">
       <Header />
 
       {/* Hero */}
@@ -188,7 +188,7 @@ export default function QuizPage() {
                   </button>
                   <Link
                     href="/puppies"
-                    className="flex-1 px-6 py-4 bg-gradient-to-r from-mint to-emerald-500 text-white rounded-2xl font-semibold text-center hover:shadow-lg hover:shadow-mint/30 transition-all"
+                    className="flex-1 px-6 py-4 bg-gradient-to-r from-mint to-emerald-500 text-white rounded-2xl font-semibold text-center hover:shadow-lg hover:shadow-mint/30 transition-all active:scale-[0.98]"
                   >
                     분양 중인 아이들 보기
                   </Link>

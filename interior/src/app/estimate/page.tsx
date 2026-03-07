@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function EstimatePage() {
   return (
-    <div className="pt-20 min-h-screen">
+    <div className="pt-20 min-h-[100svh]">
       <div className="bg-charcoal py-14 sm:py-20">
         <div className="container-custom text-center">
           <p className="text-caramel text-sm tracking-widest font-semibold mb-3">ESTIMATE</p>
@@ -24,7 +24,7 @@ export default function EstimatePage() {
           <p className="text-text/50 korean-text mb-6">
             온라인 시뮬레이션은 참고용입니다. 정확한 견적은 현장 실측 후 무료로 제공해 드립니다.
           </p>
-          <Link href="/consult" className="btn-accent">무료 현장 실측 신청</Link>
+          <Link href="/consult" className="btn-accent active:scale-[0.98]">무료 현장 실측 신청</Link>
         </div>
       </section>
     </div>

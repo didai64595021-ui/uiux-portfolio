@@ -38,7 +38,7 @@ export default function BookingPage() {
 
   if (submitted) {
     return (
-      <div className="pt-20 min-h-screen flex items-center justify-center">
+      <div className="pt-20 min-h-[100svh] flex items-center justify-center">
         <div className="text-center max-w-md mx-auto px-4">
           <div className="w-20 h-20 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
             <svg className="w-10 h-10 text-gold-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -49,14 +49,14 @@ export default function BookingPage() {
           <p className="text-text/50 korean-text mb-8">
             확인 후 카카오톡 또는 전화로 안내드리겠습니다.<br/>빠른 문의: 031-000-0000
           </p>
-          <a href="/" className="btn-primary">홈으로 돌아가기</a>
+          <a href="/" className="btn-primary active:scale-[0.98]">홈으로 돌아가기</a>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="pt-20 min-h-screen">
+    <div className="pt-20 min-h-[100svh]">
       <div className="bg-brown py-14 sm:py-20">
         <div className="container-custom text-center">
           <p className="text-gold font-display text-sm tracking-[0.2em] mb-3">RESERVATION</p>
@@ -80,7 +80,7 @@ export default function BookingPage() {
                   }`}
                 >
                   <div className="flex items-center gap-3">
-                    <img src={room.image} alt={room.name} className="w-16 h-12 object-cover rounded-lg" />
+                    <img src={room.image} alt={room.name} className="w-16 h-12 object-cover rounded-lg" loading="lazy" />
                     <div>
                       <p className="font-bold text-brown text-sm">{room.name}</p>
                       <p className="text-text/40 text-xs">최대 {room.capacity}인 · {room.price.toLocaleString()}원~</p>
@@ -185,7 +185,7 @@ export default function BookingPage() {
             </div>
           )}
 
-          <button type="submit" className="btn-primary w-full text-lg">예약 신청하기</button>
+          <button type="submit" className="btn-primary w-full text-lg active:scale-[0.98]">예약 신청하기</button>
           <p className="text-text/30 text-xs text-center korean-text">
             * 본 사이트는 포트폴리오 데모입니다. 실제 예약이 진행되지 않습니다.
           </p>

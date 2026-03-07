@@ -22,7 +22,7 @@ export default function ContactPage() {
 
   if (submitted) {
     return (
-      <div className="pt-20 min-h-screen flex items-center justify-center">
+      <div className="pt-20 min-h-[100svh] flex items-center justify-center">
         <div className="text-center max-w-md mx-auto px-4">
           <div className="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
             <svg className="w-10 h-10 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -37,7 +37,7 @@ export default function ContactPage() {
             <br />
             빠른 상담을 원하시면 1588-0000으로 전화해 주세요.
           </p>
-          <a href="/" className="btn-primary">
+          <a href="/" className="btn-primary active:scale-[0.98]">
             홈으로 돌아가기
           </a>
         </div>
@@ -46,7 +46,7 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="pt-20 min-h-screen">
+    <div className="pt-20 min-h-[100svh]">
       {/* Header */}
       <div className="bg-navy py-12 sm:py-16">
         <div className="container-custom">
@@ -195,7 +195,7 @@ export default function ContactPage() {
                 />
               </div>
 
-              <button type="submit" className="btn-primary w-full text-lg">
+              <button type="submit" className="btn-primary w-full text-lg active:scale-[0.98]">
                 무료 상담 신청하기
               </button>
 

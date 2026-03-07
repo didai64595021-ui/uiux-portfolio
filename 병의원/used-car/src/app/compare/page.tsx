@@ -52,7 +52,7 @@ export default function ComparePage() {
   ];
 
   return (
-    <div className="pt-20 min-h-screen">
+    <div className="pt-20 min-h-[100svh]">
       {/* Header */}
       <div className="bg-navy py-12 sm:py-16">
         <div className="container-custom">
@@ -76,10 +76,10 @@ export default function ComparePage() {
               {car ? (
                 <div className="bg-white rounded-2xl shadow-sm overflow-hidden border-2 border-accent/20">
                   <div className="relative h-40 sm:h-48">
-                    <img src={car.image} alt={car.model} className="w-full h-full object-cover" />
+                    <img src={car.image} alt={car.model} className="w-full h-full object-cover" loading="lazy" />
                     <button
                       onClick={() => removeSlot(idx)}
-                      className="absolute top-2 right-2 w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
+                      className="absolute top-2 right-2 w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600 transition-colors min-w-[44px] min-h-[44px]"
                       aria-label="제거"
                     >
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -120,7 +120,7 @@ export default function ComparePage() {
                               onClick={() => selectCar(idx, c)}
                               className="w-full flex items-center gap-3 p-3 hover:bg-bg transition-colors text-left min-h-[56px]"
                             >
-                              <img src={c.image} alt={c.model} className="w-14 h-10 object-cover rounded" />
+                              <img src={c.image} alt={c.model} className="w-14 h-10 object-cover rounded" loading="lazy" />
                               <div>
                                 <p className="text-sm font-semibold text-navy">{c.brand} {c.model}</p>
                                 <p className="text-xs text-text/50">{c.year}년 · {(c.price / 100).toFixed(1)}만원</p>
@@ -213,7 +213,7 @@ export default function ComparePage() {
         <div className="text-center mt-12">
           <p className="text-text/50 text-sm mb-4 korean-text">마음에 드는 차량을 찾으셨나요?</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Link href="/contact" className="btn-primary text-center">무료 상담 신청</Link>
+            <Link href="/contact" className="btn-primary text-center active:scale-[0.98]">무료 상담 신청</Link>
             <Link href="/inventory" className="btn-outline text-center">전체 재고 보기</Link>
           </div>
         </div>

@@ -86,7 +86,7 @@ export default function QuizPage() {
       .filter(Boolean);
 
     return (
-      <div className="min-h-screen bg-bg pt-20 sm:pt-24">
+      <div className="min-h-[100svh] bg-bg pt-20 sm:pt-24">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
           {/* Result Header */}
           <div className="text-center mb-10">
@@ -235,7 +235,7 @@ export default function QuizPage() {
             <div className="flex flex-col sm:flex-row justify-center gap-3">
               <Link
                 href="/booking"
-                className="inline-flex items-center justify-center px-6 py-3.5 rounded-full bg-accent text-primary font-semibold text-sm hover:bg-accent-dark hover:text-white transition-all min-h-[48px]"
+                className="inline-flex items-center justify-center px-6 py-3.5 rounded-full bg-accent text-primary font-semibold text-sm hover:bg-accent-dark hover:text-white transition-all active:scale-[0.98] min-h-[48px]"
               >
                 {t('예약 상담하기', '預約諮詢')}
               </Link>
@@ -267,7 +267,7 @@ export default function QuizPage() {
   }
 
   return (
-    <div className="min-h-screen bg-bg pt-20 sm:pt-24">
+    <div className="min-h-[100svh] bg-bg pt-20 sm:pt-24">
       <div className="max-w-2xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
         {/* Progress Bar */}
         <div className="mb-8">
@@ -394,7 +394,7 @@ export default function QuizPage() {
           <button
             onClick={handleNext}
             disabled={!canProceed}
-            className={`flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium transition-all min-h-[48px] ${
+            className={`flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-medium transition-all active:scale-[0.98] min-h-[48px] ${
               canProceed
                 ? "bg-primary text-white hover:bg-primary-dark"
                 : "bg-gray-warm text-gray-cool cursor-not-allowed"

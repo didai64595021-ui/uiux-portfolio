@@ -28,7 +28,7 @@ export default function ConsultPage() {
 
   if (submitted) {
     return (
-      <div className="pt-20 min-h-screen flex items-center justify-center">
+      <div className="pt-20 min-h-[100svh] flex items-center justify-center">
         <div className="text-center max-w-md mx-auto px-4">
           <div className="w-20 h-20 bg-caramel/20 rounded-full flex items-center justify-center mx-auto mb-6">
             <svg className="w-10 h-10 text-caramel" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -37,7 +37,7 @@ export default function ConsultPage() {
           </div>
           <h1 className="text-2xl font-display font-bold text-charcoal mb-4 korean-text">상담 신청이 완료되었습니다</h1>
           <p className="text-text/50 korean-text mb-8">담당 디자이너가 1영업일 이내에 연락드리겠습니다.</p>
-          <a href="/" className="btn-primary">홈으로 돌아가기</a>
+          <a href="/" className="btn-primary active:scale-[0.98]">홈으로 돌아가기</a>
         </div>
       </div>
     );
@@ -178,7 +178,7 @@ export default function ConsultPage() {
   ];
 
   return (
-    <div className="pt-20 min-h-screen">
+    <div className="pt-20 min-h-[100svh]">
       <div className="bg-charcoal py-14 sm:py-20">
         <div className="container-custom text-center">
           <p className="text-caramel text-sm tracking-widest font-semibold mb-3">CONSULTATION</p>
@@ -212,7 +212,7 @@ export default function ConsultPage() {
             {step > 0 && (
               <button type="button" onClick={() => setStep(step - 1)} className="btn-outline flex-1">이전</button>
             )}
-            <button type="submit" className="btn-accent flex-1">
+            <button type="submit" className="btn-accent flex-1 active:scale-[0.98]">
               {step < 2 ? "다음" : "상담 신청하기"}
             </button>
           </div>

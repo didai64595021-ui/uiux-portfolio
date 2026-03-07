@@ -12,17 +12,17 @@ export default function SpaceDetailPage() {
 
   if (!space) {
     return (
-      <div className="pt-20 min-h-screen flex items-center justify-center">
+      <div className="pt-20 min-h-[100svh] flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-charcoal mb-4">공간을 찾을 수 없습니다</h1>
-          <Link href="/" className="btn-accent">홈으로 돌아가기</Link>
+          <Link href="/" className="btn-accent active:scale-[0.98]">홈으로 돌아가기</Link>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="pt-20 min-h-screen">
+    <div className="pt-20 min-h-[100svh]">
       {/* Hero Banner */}
       <div className="relative h-[50vh] sm:h-[60vh] overflow-hidden">
         <img
@@ -107,11 +107,12 @@ export default function SpaceDetailPage() {
               <button
                 key={i}
                 onClick={() => setActiveImage(i)}
+                aria-label={`갤러리 이미지 ${i + 1}: ${g.caption}`}
                 className={`relative aspect-[4/3] rounded-lg overflow-hidden transition-all ${
                   activeImage === i ? "ring-2 ring-caramel ring-offset-2" : "opacity-60 hover:opacity-100"
                 }`}
               >
-                <img src={g.image} alt={g.caption} className="w-full h-full object-cover" />
+                <img src={g.image} alt={g.caption} className="w-full h-full object-cover" loading="lazy" />
               </button>
             ))}
           </div>
@@ -165,8 +166,8 @@ export default function SpaceDetailPage() {
             전문 디자이너가 현장을 방문하여 맞춤 견적을 무료로 제공해 드립니다.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Link href="/estimate" className="btn-accent">무료 견적 받기</Link>
-            <Link href="/consult" className="btn-outline">상담 신청</Link>
+            <Link href="/estimate" className="btn-accent active:scale-[0.98]">무료 견적 받기</Link>
+            <Link href="/consult" className="btn-outline active:scale-[0.98]">상담 신청</Link>
           </div>
         </div>
       </section>

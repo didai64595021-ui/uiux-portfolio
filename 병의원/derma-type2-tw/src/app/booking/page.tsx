@@ -38,7 +38,7 @@ export default function BookingPage() {
 
   if (submitted) {
     return (
-      <div className="min-h-screen flex items-center justify-center pt-20 px-4">
+      <div className="min-h-[100svh] flex items-center justify-center pt-20 px-4">
         <div className="max-w-md text-center">
           <div className="w-20 h-20 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-6">
             <svg
@@ -88,7 +88,7 @@ export default function BookingPage() {
           <div className="flex flex-col gap-3">
             <Link
               href="/"
-              className="inline-flex items-center justify-center px-6 py-3.5 rounded-full bg-primary text-white font-medium text-sm hover:bg-primary-dark transition-colors min-h-[48px]"
+              className="inline-flex items-center justify-center px-6 py-3.5 rounded-full bg-primary text-white font-medium text-sm hover:bg-primary-dark transition-colors active:scale-[0.98] min-h-[48px]"
             >
               {t('메인으로 돌아가기', '返回首頁')}
             </Link>
@@ -363,7 +363,7 @@ export default function BookingPage() {
               {/* Submit */}
               <button
                 type="submit"
-                className="w-full py-4 rounded-xl bg-primary text-white font-semibold text-sm sm:text-base hover:bg-primary-dark transition-colors min-h-[48px]"
+                className="w-full py-4 rounded-xl bg-primary text-white font-semibold text-sm sm:text-base hover:bg-primary-dark transition-colors active:scale-[0.98] min-h-[48px]"
               >
                 {t('예약 신청하기', '提交預約申請')}
               </button>

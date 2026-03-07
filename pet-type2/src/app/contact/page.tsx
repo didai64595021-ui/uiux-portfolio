@@ -99,7 +99,7 @@ export default function ContactPage() {
   };
 
   return (
-    <main className="min-h-screen bg-sage-50">
+    <main className="min-h-[100svh] bg-sage-50">
       <Header />
 
       {/* Hero */}
@@ -192,7 +192,8 @@ export default function ContactPage() {
                   />
                   <button
                     onClick={handleSend}
-                    className="w-11 h-11 flex-shrink-0 bg-mint rounded-xl flex items-center justify-center hover:bg-emerald-500 transition-colors"
+                    aria-label="메시지 보내기"
+                    className="w-11 h-11 flex-shrink-0 bg-mint rounded-xl flex items-center justify-center hover:bg-emerald-500 transition-colors active:scale-[0.98]"
                   >
                     <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
@@ -257,7 +258,7 @@ export default function ContactPage() {
               {/* Quick actions */}
               <a
                 href="tel:01023957347"
-                className="block w-full text-center px-6 py-4 bg-gradient-to-r from-mint to-emerald-500 text-white rounded-2xl font-semibold hover:shadow-lg hover:shadow-mint/30 transition-all"
+                className="block w-full text-center px-6 py-4 bg-gradient-to-r from-mint to-emerald-500 text-white rounded-2xl font-semibold hover:shadow-lg hover:shadow-mint/30 transition-all active:scale-[0.98]"
               >
                 전화 상담 바로 연결
               </a>

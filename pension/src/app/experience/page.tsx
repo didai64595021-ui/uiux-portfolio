@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function ExperiencePage() {
   return (
-    <div className="pt-20 min-h-screen">
+    <div className="pt-20 min-h-[100svh]">
       <div className="bg-brown py-14 sm:py-20">
         <div className="container-custom text-center">
           <p className="text-gold font-display text-sm tracking-[0.2em] mb-3">EXPERIENCE</p>
@@ -53,7 +53,7 @@ export default function ExperiencePage() {
             특별한 체험을 예약하세요
           </h2>
           <p className="text-text/50 mb-6 korean-text">체험 프로그램은 객실 예약 시 함께 신청할 수 있습니다</p>
-          <Link href="/booking" className="btn-primary">예약하기</Link>
+          <Link href="/booking" className="btn-primary active:scale-[0.98]">예약하기</Link>
         </div>
       </section>
     </div>

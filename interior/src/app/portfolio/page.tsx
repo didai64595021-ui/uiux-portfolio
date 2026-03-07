@@ -11,7 +11,7 @@ export default function PortfolioPage() {
   const filtered = filter === "all" ? projects : projects.filter((p) => p.type === filter);
 
   return (
-    <div className="pt-20 min-h-screen">
+    <div className="pt-20 min-h-[100svh]">
       <div className="bg-charcoal py-14 sm:py-20">
         <div className="container-custom text-center">
           <p className="text-caramel text-sm tracking-widest font-semibold mb-3">PORTFOLIO</p>
@@ -37,6 +37,7 @@ export default function PortfolioPage() {
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img src={project.image} alt={project.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
                 />
                 <div className="absolute top-3 left-3 flex gap-1.5">
                   <span className="bg-white/90 backdrop-blur-sm text-charcoal text-xs font-medium px-2.5 py-1 rounded-full">{typeLabels[project.type]}</span>

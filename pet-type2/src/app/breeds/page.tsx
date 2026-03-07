@@ -69,7 +69,7 @@ export default function BreedsPage() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-[100svh] bg-white">
       <Header />
 
       <section className="pt-28 sm:pt-32 pb-12 bg-sage relative overflow-hidden">

@@ -36,7 +36,7 @@ export default function RootLayout({
       </head>
       <body className="bg-dark text-gray-200 font-sans antialiased overflow-x-hidden">
         <Header />
-        <main className="min-h-screen">{children}</main>
+        <main className="min-h-[100svh]">{children}</main>
         <Footer />
         <FloatingCTA />
       </body>

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function CalculatorPage() {
   return (
-    <div className="pt-20 min-h-screen">
+    <div className="pt-20 min-h-[100svh]">
       {/* Header */}
       <div className="bg-navy py-12 sm:py-16">
         <div className="container-custom">
@@ -94,7 +94,7 @@ export default function CalculatorPage() {
           </div>
 
           <div className="text-center mt-10">
-            <Link href="/contact" className="btn-primary">
+            <Link href="/contact" className="btn-primary active:scale-[0.98]">
               맞춤 금융 상담 신청 →
             </Link>
           </div>

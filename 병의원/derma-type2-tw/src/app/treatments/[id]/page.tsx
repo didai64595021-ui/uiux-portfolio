@@ -19,7 +19,7 @@ export default function TreatmentDetailPage() {
 
   if (!treatment) {
     return (
-      <div className="min-h-screen flex items-center justify-center pt-20">
+      <div className="min-h-[100svh] flex items-center justify-center pt-20">
         <div className="text-center">
           <h1 className="font-serif text-2xl text-primary mb-4">
             {t('시술 정보를 찾을 수 없습니다', '找不到療程資訊')}
@@ -98,7 +98,7 @@ export default function TreatmentDetailPage() {
             <div className="mt-8 flex flex-col sm:flex-row gap-3">
               <Link
                 href="/booking"
-                className="inline-flex items-center justify-center px-6 py-3.5 rounded-full bg-accent text-primary font-semibold text-sm hover:bg-accent-dark hover:text-white transition-all min-h-[48px]"
+                className="inline-flex items-center justify-center px-6 py-3.5 rounded-full bg-accent text-primary font-semibold text-sm hover:bg-accent-dark hover:text-white transition-all active:scale-[0.98] min-h-[48px]"
               >
                 {t('이 시술 예약하기', '預約此療程')}
               </Link>
@@ -335,7 +335,7 @@ export default function TreatmentDetailPage() {
           <div className="flex flex-col sm:flex-row justify-center gap-3">
             <Link
               href="/booking"
-              className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-accent text-primary font-semibold text-sm hover:bg-accent-dark hover:text-white transition-all min-h-[48px]"
+              className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-accent text-primary font-semibold text-sm hover:bg-accent-dark hover:text-white transition-all active:scale-[0.98] min-h-[48px]"
             >
               {t('예약 상담하기', '預約諮詢')}
             </Link>

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function RoomsPage() {
   return (
-    <div className="pt-20 min-h-screen">
+    <div className="pt-20 min-h-[100svh]">
       <div className="bg-brown py-14 sm:py-20">
         <div className="container-custom text-center">
           <p className="text-gold font-display text-sm tracking-[0.2em] mb-3">ROOMS</p>
@@ -22,7 +22,7 @@ export default function RoomsPage() {
             {/* Image */}
             <div className="w-full lg:w-1/2">
               <div className="relative rounded-3xl overflow-hidden aspect-[4/3] shadow-xl">
-                <img src={room.image} alt={room.name} className="w-full h-full object-cover" />
+                <img src={room.image} alt={room.name} className="w-full h-full object-cover" loading="lazy" />
                 <div className="absolute top-4 left-4 bg-gold/90 text-brown-dark text-xs font-bold px-3 py-1.5 rounded-full">
                   {room.highlight}
                 </div>
@@ -67,7 +67,7 @@ export default function RoomsPage() {
                 </div>
               </div>
 
-              <Link href="/booking" className="btn-primary w-full sm:w-auto text-center">
+              <Link href="/booking" className="btn-primary w-full sm:w-auto text-center active:scale-[0.98]">
                 이 객실 예약하기
               </Link>
             </div>
