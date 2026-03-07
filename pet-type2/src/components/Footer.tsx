@@ -60,7 +60,8 @@ export default function Footer() {
               <span className="font-display font-bold text-lg">Signature Pups</span>
             </Link>
             <p className="text-white/40 text-sm leading-relaxed korean-text">
-              프리미엄 강아지 분양 전문<br />
+              프리미엄 강아지 분양 전문
+              <br />
               시그니처펍스 위례점
             </p>
           </div>

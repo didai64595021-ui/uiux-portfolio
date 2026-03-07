@@ -11,7 +11,9 @@ export default function Footer() {
             숲 속의 쉼, 지금 예약하세요
           </h2>
           <p className="text-white/50 mb-8 korean-text max-w-md mx-auto">
-            프라이빗 독채에서 자연과 함께하는 특별한 시간을 선물하세요.
+            프라이빗 독채에서 자연과 함께하는
+            <br className="hidden sm:block" />
+            특별한 시간을 선물하세요.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/booking" className="btn-primary !bg-gold !text-brown-dark hover:!bg-gold-light text-center">
@@ -25,7 +27,7 @@ export default function Footer() {
       </div>
 
       <div className="container-custom py-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="font-display mb-4">
               <span className="text-lg font-bold">ONDA</span>

@@ -107,7 +107,10 @@ export default function DynamicHero() {
           </h1>
 
           <p className="text-white/70 text-base sm:text-lg mb-8 korean-text max-w-lg animate-slide-up" style={{ animationDelay: "0.2s" }}>
-            가평 자연 속 프라이빗 펜션. 전용 노천탕, 편백 숲 산책로,
+            가평 자연 속 프라이빗 펜션.
+            <br className="hidden sm:block" />
+            전용 노천탕, 편백 숲 산책로,
+            <br className="hidden sm:block" />
             계절마다 달라지는 특별한 체험이 기다립니다.
           </p>
 

@@ -157,8 +157,10 @@ export default function HeroSection() {
             </p>
             <p className="text-sm sm:text-base text-gray-500 max-w-lg mx-auto lg:mx-0 korean-body mb-8">
               영업사원이 아닌 5년차 기술자가 직접 운영합니다.
+              <br />
+              불가능한 건 솔직히 말하고,
               <br className="hidden sm:block" />
-              불가능한 건 솔직히 말하고, 가능한 건 확실히 성과를 냅니다.
+              가능한 건 확실히 성과를 냅니다.
             </p>
 
             {/* CTA Buttons */}

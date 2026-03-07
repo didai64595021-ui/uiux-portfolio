@@ -81,8 +81,10 @@ export default function Hero() {
 
             <p className="korean-text text-base sm:text-lg text-white/60 max-w-lg mb-8 leading-relaxed">
               건강하고 행복한 반려견과의 특별한 만남.
+              <br />
+              시그니처펍스에서 당신만의
               <br className="hidden sm:block" />
-              시그니처펍스에서 당신만의 시그니처 파트너를 찾아보세요.
+              시그니처 파트너를 찾아보세요.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">

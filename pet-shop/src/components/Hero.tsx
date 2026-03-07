@@ -73,7 +73,8 @@ export default function Hero() {
             isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
-          건강하고 아름다운 프리미엄 강아지와 함께하는<br className="hidden sm:block" />
+          건강하고 아름다운 프리미엄 강아지와 함께하는
+          <br className="hidden sm:block" />
           특별한 시작, 시그니처펍스가 함께합니다
         </p>
 

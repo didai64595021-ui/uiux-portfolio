@@ -58,7 +58,9 @@ export default function ROICalculator() {
             계산기
           </h2>
           <p className="section-subtitle mx-auto">
-            월 광고 예산과 업종을 선택하면 예상 성과를 계산해드립니다
+            월 광고 예산과 업종을 선택하면
+            <br className="hidden sm:block" />
+            예상 성과를 계산해드립니다
           </p>
         </div>
 

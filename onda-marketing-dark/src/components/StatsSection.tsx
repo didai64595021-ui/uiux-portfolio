@@ -129,7 +129,9 @@ export default function StatsSection() {
             <span className="gradient-neon-text text-glow">성과</span>
           </h2>
           <p className="section-subtitle mx-auto">
-            허황된 약속 대신, 실제 데이터로 증명합니다
+            허황된 약속 대신,
+            <br className="hidden sm:block" />
+            실제 데이터로 증명합니다
           </p>
         </div>
 

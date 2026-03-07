@@ -5,9 +5,9 @@ export default function Footer() {
     <footer className="bg-brown-deep text-white/70">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
-          <div className="sm:col-span-2 lg:col-span-1">
+          <div className="col-span-2 lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 rounded-full bg-rose-gold/20 flex items-center justify-center">
                 <svg className="w-5 h-5 text-rose-gold" fill="currentColor" viewBox="0 0 24 24">
@@ -21,7 +21,9 @@ export default function Footer() {
               </div>
             </div>
             <p className="korean-text text-sm leading-relaxed mb-4">
-              건강하고 아름다운 프리미엄 강아지와 함께하는 특별한 시작. 시그니처펍스가 함께합니다.
+              건강하고 아름다운 프리미엄 강아지와 함께하는
+              <br className="hidden sm:block" />
+              특별한 시작. 시그니처펍스가 함께합니다.
             </p>
             <p className="text-xs text-white/40 font-luxury italic">
               Premium Life with Signature

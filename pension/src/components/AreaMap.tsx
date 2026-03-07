@@ -21,7 +21,9 @@ export default function AreaMap() {
             주변 즐길거리
           </h2>
           <p className="text-text/50 max-w-md mx-auto korean-text">
-            호스트가 직접 추천하는 주변 명소들. 펜션에서 가까운 순으로 정렬했어요.
+            호스트가 직접 추천하는 주변 명소들.
+            <br className="hidden sm:block" />
+            펜션에서 가까운 순으로 정렬했어요.
           </p>
         </div>
 

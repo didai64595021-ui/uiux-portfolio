@@ -63,7 +63,9 @@ export default function ContactForm() {
             신청
           </h2>
           <p className="section-subtitle mx-auto">
-            현재 마케팅 상태를 무료로 진단해드립니다. 영업 전화 없습니다.
+            현재 마케팅 상태를 무료로 진단해드립니다.
+            <br className="hidden sm:block" />
+            영업 전화 없습니다.
           </p>
         </div>
 

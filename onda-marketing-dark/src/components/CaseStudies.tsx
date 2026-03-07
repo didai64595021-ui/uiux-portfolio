@@ -29,7 +29,9 @@ export default function CaseStudies() {
             <span className="gradient-neon-text text-glow">타임라인</span>
           </h2>
           <p className="section-subtitle mx-auto">
-            실제 클라이언트의 Before & After. 숫자는 거짓말하지 않습니다.
+            실제 클라이언트의 Before & After.
+            <br className="hidden sm:block" />
+            숫자는 거짓말하지 않습니다.
           </p>
         </div>
 

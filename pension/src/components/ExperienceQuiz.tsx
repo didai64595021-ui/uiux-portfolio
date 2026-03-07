@@ -81,7 +81,9 @@ export default function ExperienceQuiz() {
             나에게 맞는 객실 찾기
           </h2>
           <p className="text-white/50 max-w-md mx-auto korean-text">
-            3가지 질문으로 당신에게 딱 맞는 객실과 체험을 추천해 드려요
+            3가지 질문으로 당신에게 딱 맞는
+            <br className="hidden sm:block" />
+            객실과 체험을 추천해 드려요
           </p>
         </div>
 
