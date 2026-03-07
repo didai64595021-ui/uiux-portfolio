@@ -93,7 +93,7 @@ export default function AboutPage() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {values.map((value, i) => (
               <div key={value.title} className="neon-card group">
                 <div className="neon-card-inner !p-8">

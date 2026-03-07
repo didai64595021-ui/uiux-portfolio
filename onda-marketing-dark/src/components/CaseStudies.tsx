@@ -41,7 +41,7 @@ export default function CaseStudies() {
             <button
               key={tag}
               onClick={() => setActiveTag(tag)}
-              className={`px-4 py-2 rounded-full text-xs font-grotesk transition-all duration-300 ${
+              className={`px-4 py-2 rounded-full text-xs font-grotesk transition-all duration-300 min-h-[44px] ${
                 activeTag === tag
                   ? "bg-neon/15 text-neon border border-neon/40"
                   : "bg-charcoal text-gray-500 border border-charcoal-border hover:text-gray-300 hover:border-neon/20"

@@ -47,7 +47,7 @@ export default function ValuesSection() {
         </div>
 
         {/* Values Grid */}
-        <div className="grid md:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
           {values.map((value, i) => (
             <div key={value.title} className="group">
               <div className="neon-card h-full">

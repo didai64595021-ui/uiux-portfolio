@@ -147,7 +147,7 @@ export default function ServicesPage() {
             </h2>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {processSteps.map((step, i) => (
               <div key={step.step} className="glass-card p-6 text-center group">
                 <div className="font-mono text-5xl font-bold text-charcoal-border/40 group-hover:text-neon/20 transition-colors mb-4">

@@ -114,7 +114,7 @@ export default function QuizPage() {
                 {currentQ > 0 && (
                   <button
                     onClick={() => setCurrentQ(currentQ - 1)}
-                    className="mt-6 text-sage/40 hover:text-sage/60 text-sm transition-colors"
+                    className="mt-6 text-sage/40 hover:text-sage/60 text-sm transition-colors min-h-[44px]"
                   >
                     ← 이전 질문
                   </button>

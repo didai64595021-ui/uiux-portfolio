@@ -167,7 +167,7 @@ export default function ContactPage() {
                                 <button
                                   key={opt}
                                   onClick={() => handleOption(opt)}
-                                  className="px-3 py-1.5 bg-white border border-mint/30 text-mint text-xs sm:text-sm rounded-full font-medium hover:bg-mint/5 transition-colors"
+                                  className="px-3 py-1.5 min-h-[44px] bg-white border border-mint/30 text-mint text-xs sm:text-sm rounded-full font-medium hover:bg-mint/5 transition-colors"
                                 >
                                   {opt}
                                 </button>

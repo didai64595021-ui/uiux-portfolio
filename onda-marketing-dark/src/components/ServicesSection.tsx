@@ -61,7 +61,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Service Cards */}
-        <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
+        <div className="grid grid-cols-2 gap-4 sm:gap-6">
           {services.map((service) => (
             <div
               key={service.id}

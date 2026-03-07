@@ -220,7 +220,7 @@ export default function ContactPage() {
                           {serviceOptions.map((option) => (
                             <label key={option} className="cursor-pointer">
                               <input type="checkbox" className="peer hidden" />
-                              <span className="inline-block px-4 py-2 rounded-xl border border-gray-200 text-sm text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white peer-checked:border-primary-500 transition-all korean-text">
+                              <span className="inline-flex items-center px-4 py-2 rounded-xl border border-gray-200 text-sm text-gray-600 peer-checked:bg-primary-500 peer-checked:text-white peer-checked:border-primary-500 transition-all korean-text min-h-[44px]">
                                 {option}
                               </span>
                             </label>

@@ -24,7 +24,7 @@ export default function ExperiencePage() {
           <h2 className="text-xl sm:text-2xl font-display font-bold text-brown text-center mb-10 korean-text">
             온다 스테이 체험 프로그램
           </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {[
               { icon: "♨️", title: "전용 노천탕", desc: "별빛 아래 즐기는 프라이빗 온천. 소나무채, 편백나무채 객실에서 이용 가능합니다." },
               { icon: "🔥", title: "프리미엄 BBQ", desc: "한우 세트, 해물 세트 등 엄선된 식재료로 준비된 바비큐를 전용 데크에서 즐기세요." },

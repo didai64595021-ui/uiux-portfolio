@@ -69,7 +69,7 @@ export default function SpaceDetailPage() {
             <p className="text-caramel text-sm tracking-widest font-semibold mb-2">FEATURES</p>
             <h2 className="heading-responsive text-charcoal korean-text">{space.name} 설계 포인트</h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {space.features.map((f, i) => (
               <div key={i} className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-lg transition-all group">
                 <div className="text-3xl mb-4">{f.icon}</div>
