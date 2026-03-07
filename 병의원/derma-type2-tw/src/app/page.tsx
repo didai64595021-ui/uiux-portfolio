@@ -94,7 +94,7 @@ export default function Home() {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden sm:flex flex-col items-center gap-2">
           <span className="text-white/30 text-xs tracking-widest">SCROLL</span>
           <div className="w-px h-8 bg-gradient-to-b from-white/30 to-transparent" />
         </div>

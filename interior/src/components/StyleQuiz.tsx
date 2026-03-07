@@ -70,8 +70,10 @@ export default function StyleQuiz() {
           <h2 className="heading-responsive text-white font-display korean-text mb-4">
             나의 인테리어 스타일은?
           </h2>
-          <p className="text-white/40 max-w-md mx-auto korean-text">
-            3가지 질문으로 당신에게 맞는 인테리어 스타일을 찾아드려요
+          <p className="text-white/40 max-w-md mx-auto korean-text text-sm sm:text-base">
+            3가지 질문으로 당신에게 맞는
+            <br className="hidden sm:block" />
+            인테리어 스타일을 찾아드려요
           </p>
         </div>
 

@@ -26,7 +26,7 @@ export default function CTA() {
           </h2>
           <p className="text-white/70 mt-4 sm:mt-6 text-sm sm:text-base md:text-lg korean-text leading-relaxed">
             피부 고민, 혼자 고민하지 마세요.
-            <br />
+            <br className="hidden sm:inline" />
             전문의와의 1:1 상담으로 최적의 솔루션을 찾아드립니다.
           </p>
 

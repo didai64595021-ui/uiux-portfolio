@@ -288,7 +288,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden sm:flex flex-col items-center gap-2"
       >
         <span className="text-xs text-gray-400 font-medium tracking-wider">SCROLL</span>
         <div className="w-5 h-8 rounded-full border-2 border-gray-300 flex items-start justify-center p-1">

@@ -53,7 +53,9 @@ export default function VideoHero() {
             의 시작
           </h1>
           <p className="text-white/70 text-sm sm:text-lg mb-6 sm:mb-8 korean-text max-w-lg animate-slide-up" style={{ animationDelay: "0.2s" }}>
-            전문 딜러의 엄선된 인증 중고차. AI 시세 분석으로 합리적인 가격에 만나보세요.
+            전문 딜러의 엄선된 인증 중고차.
+            <br className="hidden sm:inline" />
+            AI 시세 분석으로 합리적인 가격에 만나보세요.
           </p>
 
           {/* CTA Buttons */}

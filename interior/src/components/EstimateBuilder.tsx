@@ -63,8 +63,10 @@ export default function EstimateBuilder() {
           <h2 className="heading-responsive text-charcoal font-display korean-text mb-4">
             인테리어 견적 시뮬레이터
           </h2>
-          <p className="text-text/50 max-w-md mx-auto korean-text">
-            공간과 조건을 선택하면 예상 견적을 바로 확인할 수 있습니다
+          <p className="text-text/50 max-w-md mx-auto korean-text text-sm sm:text-base">
+            공간과 조건을 선택하면
+            <br className="hidden sm:block" />
+            예상 견적을 바로 확인할 수 있습니다
           </p>
         </div>
 

@@ -38,7 +38,10 @@ export default function SpatialHero() {
             </h1>
             <p className="text-white/50 text-base sm:text-lg mb-8 korean-text max-w-lg animate-slide-up" style={{ animationDelay: "0.2s" }}>
               15년 경력의 디자이너가 만드는 맞춤 인테리어.
-              아파트, 주택, 사무실까지 — 당신의 공간을 새롭게 설계합니다.
+              <br />
+              아파트, 주택, 사무실까지 —
+              <br className="hidden sm:block" />
+              당신의 공간을 새롭게 설계합니다.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 animate-slide-up" style={{ animationDelay: "0.3s" }}>
               <Link href="/estimate" className="btn-accent text-center w-full sm:w-auto">

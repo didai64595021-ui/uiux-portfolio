@@ -21,7 +21,9 @@ export default function MaterialLibrary() {
           <p className="text-caramel text-sm tracking-widest font-semibold mb-3">MATERIALS</p>
           <h2 className="heading-responsive text-charcoal font-display korean-text mb-4">소재 라이브러리</h2>
           <p className="text-text/50 max-w-md mx-auto korean-text">
-            온다 리빙이 엄선한 파트너사 자재들. 직접 보고 만져보실 수 있습니다.
+            온다 리빙이 엄선한 파트너사 자재들.
+            <br className="hidden sm:block" />
+            직접 보고 만져보실 수 있습니다.
           </p>
         </div>
 

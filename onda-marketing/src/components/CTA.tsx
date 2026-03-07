@@ -46,7 +46,9 @@ export default function CTA() {
                 </h2>
 
                 <p className="text-base sm:text-lg text-white/80 max-w-2xl mx-auto mb-8 sm:mb-10 korean-text leading-relaxed">
-                  현재 마케팅 현황을 분석하고, 개선점과 예상 성과를 무료로 알려드립니다.
+                  현재 마케팅 현황을 분석하고,
+                  <br className="hidden sm:block" />
+                  개선점과 예상 성과를 무료로 알려드립니다.
                   <br className="hidden sm:block" />
                   부담 없이 시작하세요. 영업 전화 없습니다.
                 </p>
