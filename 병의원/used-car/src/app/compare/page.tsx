@@ -79,7 +79,7 @@ export default function ComparePage() {
                     <img src={car.image} alt={car.model} className="w-full h-full object-cover" loading="lazy" />
                     <button
                       onClick={() => removeSlot(idx)}
-                      className="absolute top-2 right-2 w-8 h-8 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600 transition-colors min-w-[44px] min-h-[44px]"
+                      className="absolute top-2 right-2 w-10 h-10 bg-red-500 text-white rounded-full flex items-center justify-center hover:bg-red-600 transition-colors"
                       aria-label="제거"
                     >
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

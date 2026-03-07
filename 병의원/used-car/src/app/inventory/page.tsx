@@ -88,7 +88,7 @@ export default function InventoryPage() {
                 <div className="flex flex-wrap gap-2">
                   <button
                     onClick={() => setSelectedBrand("")}
-                    className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all min-h-[36px] ${
+                    className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all min-h-[44px] ${
                       !selectedBrand ? "bg-navy text-white" : "bg-bg text-text/60 hover:bg-gray-200"
                     }`}
                   >
@@ -98,7 +98,7 @@ export default function InventoryPage() {
                     <button
                       key={b}
                       onClick={() => setSelectedBrand(selectedBrand === b ? "" : b)}
-                      className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all min-h-[36px] ${
+                      className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all min-h-[44px] ${
                         selectedBrand === b ? "bg-navy text-white" : "bg-bg text-text/60 hover:bg-gray-200"
                       }`}
                     >
@@ -173,7 +173,7 @@ export default function InventoryPage() {
                 <div className="flex flex-wrap gap-2">
                   <button
                     onClick={() => setFuelFilter("")}
-                    className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all min-h-[36px] ${
+                    className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all min-h-[44px] ${
                       !fuelFilter ? "bg-navy text-white" : "bg-bg text-text/60"
                     }`}
                   >
@@ -183,7 +183,7 @@ export default function InventoryPage() {
                     <button
                       key={f}
                       onClick={() => setFuelFilter(fuelFilter === f ? "" : f)}
-                      className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all min-h-[36px] ${
+                      className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all min-h-[44px] ${
                         fuelFilter === f ? "bg-navy text-white" : "bg-bg text-text/60"
                       }`}
                     >
@@ -289,7 +289,7 @@ export default function InventoryPage() {
                         )}
                         <button
                           onClick={() => toggleCompare(car)}
-                          className={`absolute top-3 right-3 w-9 h-9 rounded-full flex items-center justify-center transition-all ${
+                          className={`absolute top-3 right-3 w-10 h-10 rounded-full flex items-center justify-center transition-all ${
                             isCompare ? "bg-accent text-white" : "bg-white/80 text-text/60 hover:bg-accent hover:text-white"
                           }`}
                           aria-label="비교 추가"
@@ -364,7 +364,7 @@ export default function InventoryPage() {
                         <div className="flex items-center gap-3 mt-3">
                           <button
                             onClick={() => toggleCompare(car)}
-                            className={`text-xs px-3 py-1.5 rounded-full transition-all min-h-[36px] ${
+                            className={`text-xs px-3 py-1.5 rounded-full transition-all min-h-[44px] ${
                               isCompare ? "bg-accent text-white" : "bg-bg text-text/60 hover:bg-accent/10"
                             }`}
                           >
