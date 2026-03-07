@@ -36,14 +36,14 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        className={`fixed top-0 left-0 right-0 z-[56] transition-all duration-500 ${
           scrolled
             ? "bg-white/95 backdrop-blur-md shadow-sm"
             : "bg-transparent"
         }`}
       >
         <div className="container-base flex items-center justify-between h-16 sm:h-20">
-          <Link href="/" className="relative z-50">
+          <Link href="/" className="relative">
             <span className={`font-serif text-xl sm:text-2xl font-semibold tracking-wider transition-colors duration-300 ${
               scrolled ? "text-foreground" : "text-white"
             }`}>

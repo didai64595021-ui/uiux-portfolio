@@ -127,6 +127,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
+                onClick={() => setIsOpen(false)}
                 className={`px-4 py-3 rounded-lg font-grotesk text-base transition-all ${
                   pathname === link.href
                     ? "text-neon bg-neon/5 border border-neon/20"
@@ -140,6 +141,7 @@ export default function Header() {
           <div className="mt-auto">
             <Link
               href="/contact"
+              onClick={() => setIsOpen(false)}
               className="block w-full text-center py-4 font-grotesk font-semibold text-dark bg-neon rounded-lg"
             >
               무료 상담 신청
